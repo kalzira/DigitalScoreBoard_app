@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Score Board</string>
+    <string name="scoreText_size_tablet">170dp</string>
+    <string name="penaltiText_size_tablet">70dp</string>
+    <string name="scoreText_size">90dp</string>
+    <string name="penaltiText_size">60dp</string>
+    <string name="score_text">0</string>
+    <string name="clearBtn">Clear</string>
+</resources>
