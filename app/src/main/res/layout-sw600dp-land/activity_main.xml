@@ -13,9 +13,9 @@
 
     <Button
         android:id="@+id/scoreLeft"
-        android:layout_width="302dp"
-        android:layout_height="337dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="334dp"
+        android:layout_height="378dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:background="@color/leftColor"
         android:fontFamily="sans-serif"
@@ -27,37 +27,37 @@
 
     <Button
         android:id="@+id/penaltiLeft"
-        android:layout_width="96dp"
-        android:fontFamily="sans-serif"
-        android:layout_height="248dp"
-        android:layout_marginStart="24dp"
+        android:layout_width="157dp"
+        android:layout_height="233dp"
+        android:layout_marginStart="4dp"
         android:background="@color/leftColor"
+        android:fontFamily="sans-serif"
         android:text="@string/score_text"
         android:textColor="@android:color/white"
-        android:textSize="60sp"
+        android:textSize="70sp"
         app:layout_constraintStart_toEndOf="@+id/scoreLeft"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/penaltiRight"
-        android:layout_width="96dp"
-        android:layout_height="248dp"
-        android:layout_marginEnd="24dp"
-        android:fontFamily="sans-serif"
+        android:layout_width="157dp"
+        android:layout_height="233dp"
+        android:layout_marginEnd="4dp"
         android:background="@color/rightColor"
+        android:fontFamily="sans-serif"
         android:text="@string/score_text"
         android:textColor="@android:color/white"
-        android:textSize="60sp"
+        android:textSize="70sp"
         app:layout_constraintEnd_toStartOf="@+id/scoreRight"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
         android:id="@+id/scoreRight"
-        android:layout_width="302dp"
-        android:layout_height="337dp"
+        android:layout_width="334dp"
+        android:layout_height="378dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="8dp"
         android:background="@color/rightColor"
         android:fontFamily="sans-serif"
         android:text="@string/score_text"

@@ -15,8 +15,8 @@
 
     <Button
         android:id="@+id/scoreLeft"
-        android:layout_width="219dp"
-        android:layout_height="222dp"
+        android:layout_width="231dp"
+        android:layout_height="255dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:background="@color/leftColor"
@@ -28,40 +28,38 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
     <Button
         android:id="@+id/penaltiLeft"
-        android:layout_width="78dp"
-        android:layout_height="163dp"
-        android:layout_marginStart="16dp"
-        android:fontFamily="sans-serif"
+        android:layout_width="100dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="8dp"
         android:background="@color/leftColor"
+        android:fontFamily="sans-serif"
+        android:text="@string/score_text"
         android:textColor="@android:color/white"
         android:textSize="60sp"
         app:layout_constraintStart_toEndOf="@+id/scoreLeft"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/score_text"/>
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
         android:id="@+id/penaltiRight"
-        android:layout_width="78dp"
-        android:layout_height="163dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="sans-serif"
+        android:layout_width="100dp"
+        android:layout_height="145dp"
+        android:layout_marginEnd="8dp"
         android:background="@color/rightColor"
+        android:fontFamily="sans-serif"
+        android:text="@string/score_text"
         android:textColor="@android:color/white"
         android:textSize="60sp"
         app:layout_constraintEnd_toStartOf="@+id/scoreRight"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/score_text"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
         android:id="@+id/scoreRight"
-        android:layout_width="219dp"
-        android:layout_height="222dp"
+        android:layout_width="231dp"
+        android:layout_height="255dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:background="@color/rightColor"
