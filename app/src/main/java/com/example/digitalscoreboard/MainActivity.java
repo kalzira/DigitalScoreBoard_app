@@ -1,5 +1,7 @@
 package com.example.digitalscoreboard;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -11,6 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     int intScoreL, intScoreR,intPenaltiL,intPenaltiR;
     private Button btnClear, btnScoreL, btnScoreR, btnPenaltiL, btnPenaltiR;
+
 
 
     @Override
@@ -39,7 +42,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         intPenaltiL = Integer.parseInt(btnPenaltiL.getText().toString());
         intPenaltiR = Integer.parseInt(btnPenaltiR.getText().toString());
 
+        if (savedInstanceState != null) {
+            intPenaltiL = savedInstanceState.getInt("IntPenaltiL");
+            btnPenaltiL.setText(""+intPenaltiL);
+
+            intPenaltiR = savedInstanceState.getInt("IntPenaltiR");
+            btnPenaltiR.setText(""+intPenaltiR);
+
+            intScoreL = savedInstanceState.getInt("IntScoreL");
+            btnScoreL.setText(""+intScoreL);
+
+            intScoreR = savedInstanceState.getInt("IntScoreR");
+            btnScoreR.setText(""+intScoreR);
+
+        }
+
     }
+
+
+
 
     @Override
     public void onClick(View view) {
@@ -61,11 +82,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 btnScoreR.setText(""+intScoreR);
                 break;
             case R.id.buttonClear:
-                btnPenaltiL.setText(getResources().getString(R.string.score_text));
-                btnPenaltiR.setText(getResources().getString(R.string.score_text));
-                btnScoreL.setText(getResources().getString(R.string.score_text));
-                btnScoreR.setText(getResources().getString(R.string.score_text));
+                intPenaltiL=0;
+                intPenaltiR =0;
+                intScoreL=0;
+                intScoreR=0;
+                btnPenaltiL.setText(""+intPenaltiL);
+                btnPenaltiR.setText(""+intPenaltiR);
+                btnScoreL.setText(""+intScoreL);
+                btnScoreR.setText(""+intScoreR);
                 break;
         }
+
+    }
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("IntPenaltiL", intPenaltiL);
+        outState.putInt("IntPenaltiR", intPenaltiR);
+        outState.putInt("IntScoreL", intScoreL);
+        outState.putInt("IntScoreR", intScoreR);
     }
 }

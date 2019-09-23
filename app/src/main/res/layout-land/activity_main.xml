@@ -15,17 +15,17 @@
 
     <Button
         android:id="@+id/scoreLeft"
-        android:layout_width="207dp"
-        android:layout_height="352dp"
+        android:layout_width="219dp"
+        android:layout_height="222dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:background="@color/leftColor"
         android:fontFamily="sans-serif"
-        android:background="@android:color/holo_red_dark"
+        android:text="@string/score_text"
         android:textColor="@android:color/white"
         android:textSize="90sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/score_text" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 
@@ -35,7 +35,7 @@
         android:layout_height="163dp"
         android:layout_marginStart="16dp"
         android:fontFamily="sans-serif"
-        android:background="@android:color/holo_red_dark"
+        android:background="@color/leftColor"
         android:textColor="@android:color/white"
         android:textSize="60sp"
         app:layout_constraintStart_toEndOf="@+id/scoreLeft"
@@ -50,7 +50,7 @@
         android:layout_height="163dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="sans-serif"
-        android:background="@android:color/holo_blue_dark"
+        android:background="@color/rightColor"
         android:textColor="@android:color/white"
         android:textSize="60sp"
         app:layout_constraintEnd_toStartOf="@+id/scoreRight"
@@ -60,33 +60,32 @@
 
     <Button
         android:id="@+id/scoreRight"
-        android:layout_width="207dp"
-        android:layout_height="352dp"
-        android:fontFamily="sans-serif"
+        android:layout_width="219dp"
+        android:layout_height="222dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:background="@android:color/holo_blue_dark"
+        android:background="@color/rightColor"
+        android:fontFamily="sans-serif"
+        android:text="@string/score_text"
         android:textColor="@android:color/white"
         android:textSize="90sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/score_text" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
         android:id="@+id/buttonClear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="75dp"
+        android:layout_height="38dp"
         android:layout_marginBottom="32dp"
-        android:text="@string/clearBtn"
-        android:fontFamily="sans-serif"
-        android:textColor="@android:color/white"
         android:background="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:text="@string/clearBtn"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
